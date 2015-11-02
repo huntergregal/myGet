@@ -75,9 +75,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Grabs a webpage!")
     ##add arguments
     #output file
-    parser.add_argument('-f', '--file', dest='outFile', help='Specify an output file')
+    parser.add_argument('-f', '--file', dest='outFile', help='Specify an output file', required=True)
     #url
-    parser.add_argument('-u', '--url', dest='url', help='Specify URL to get')
+    parser.add_argument('-u', '--url', dest='url', help='Specify URL to get', required=True)
     #user-agent
     parser.add_argument('-a', '--agent', dest='agent', help='Specify a user agent to use', default="myGet 0.0.1a; NET320-20151014")
     #Method
