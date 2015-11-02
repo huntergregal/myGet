@@ -41,7 +41,7 @@ def get(url, agent, outFile):
         sys.exit()
     #else write contents to file
     else:
-        print('Request succesful. \nWriting response to output file...')
+        print('Request successful. \nWriting response to output file...')
         f = open(outFile, 'wb')
         f.write(r.content)
         f.close()
@@ -63,7 +63,7 @@ def post(url, agent, outFile, data):
         sys.exit()
     #else write contents to file
     else:
-        print('Request succesful. \nWriting response to output file...')
+        print('Request successful. \nWriting response to output file...')
         f = open(outFile, 'wb')
         f.write(r.content)
         f.close()
